@@ -12,6 +12,7 @@
 		CEC4E70C219569B100FA6766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E70A219569B100FA6766 /* Main.storyboard */; };
 		CEC4E70E219569D100FA6766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E70D219569D100FA6766 /* Assets.xcassets */; };
 		CEC4E711219569D100FA6766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC4E70F219569D100FA6766 /* LaunchScreen.storyboard */; };
+		CEC4E71A21956A5D00FA6766 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC4E71921956A5C00FA6766 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CEC4E70D219569D100FA6766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC4E710219569D100FA6766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC4E712219569D100FA6766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC4E71921956A5C00FA6766 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC4E71A21956A5D00FA6766 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				CEC4E705219569B000FA6766 /* MyLocations */,
 				CEC4E704219569B000FA6766 /* Products */,
+				CEC4E71821956A5C00FA6766 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				CEC4E712219569D100FA6766 /* Info.plist */,
 			);
 			path = MyLocations;
+			sourceTree = "<group>";
+		};
+		CEC4E71821956A5C00FA6766 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC4E71921956A5C00FA6766 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ignasiperez.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ignasiperez.MyLocations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
